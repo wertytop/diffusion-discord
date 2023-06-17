@@ -6,7 +6,6 @@ A discord bot that utilizes stable diffusion to generate images given a prompt
 
 # Using the bot
 
-The bot uses a single command, `/diffusion <prompts>, <negative prompts>, <number of image>
+The bot uses a single command, `/diffusion <prompts>, <negative prompts>, <number of image>`
 
-This bot uses replicate-api so it can be ran on almost any machine
-I will switch that, because replicate has a limit on the amount you can generate.
+This bot uses replicate-api so it can be ran on almost any machine, but I will switch that, because replicate has a limit on the amount you can generate.
