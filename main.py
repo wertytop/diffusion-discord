@@ -13,6 +13,7 @@ async def diffusion(self, diffusionprompt: str):
     output = replicate.run("stability-ai/stable-diffusion:db21e45d3f7023abc2a46ee38a23973f6dce16bb082a930b0c49861f96d1e5bf:",
      input={"prompt":diffusionprompt}
 )
+    
 print(output) 
 await self.response.send_message(output)
 @client.event
@@ -20,7 +21,5 @@ async def on_ready():
     print("Bot has booted!")
     await tree.sync(guild=discord.Object(id=1113884879252369438))
 
-
-# load_dotenv()
-# print(os.getenv("TOKEN"))
+load_dotenv()
 client.run(os.getenv("TOKEN"))
