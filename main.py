@@ -1,7 +1,8 @@
 import discord
-# import os
-# from dotenv import load_dotenv
+import os
+from dotenv import load_dotenv
 from discord import app_commands
+import requests
 from torch import autocast
 from diffusers import StableDiffusionPipeline
 
@@ -25,6 +26,6 @@ async def on_ready():
     await tree.sync(guild=discord.Object(id=1113884879252369438))
 
 
-# load_dotenv()
-# print(os.getenv("TOKEN"))
-client.run("token")
+load_dotenv()
+print(os.getenv("TOKEN"))
+client.run(os.getenv("TOKEN"))
